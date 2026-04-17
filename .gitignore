@@ -1,0 +1,10 @@
+# Python bytecode/cache
+**/__pycache__/
+*.pyc
+
+# Large local dataset cache
+results/sst.mnmean.nc
+
+# Optional local outputs (uncomment if you don't want generated files tracked)
+# results/*.png
+# results/*.keras
