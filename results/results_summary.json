@@ -1,26 +1,30 @@
 {
-  "linear_regression": {
-    "test_mse": 0.002236,
-    "test_rmse": 0.047288,
-    "test_r2": 0.957817
+  "project": "DNN SST prediction for fisheries-focused point analysis",
+  "dataset": "D:\\PROJECTS\\sst-forecasting-dnn\\data\\sst.mnmean.nc",
+  "location": {
+    "requested_lat": 0.0,
+    "requested_lon": 90.0,
+    "selected_lat": 0.0,
+    "selected_lon": 90.0,
+    "description": "Central equatorial Indian Ocean point"
   },
-  "dnn": {
-    "test_mse": 0.003188,
-    "test_rmse": 0.056461,
-    "test_r2": 0.939864
+  "method": {
+    "model": "Dense Neural Network (DNN)",
+    "input_window_months": 12,
+    "training_period": {
+      "start": "1855-01-01",
+      "end": "1999-12-01"
+    },
+    "prediction_period": {
+      "start": "2000-01-01",
+      "end": "2025-12-01"
+    },
+    "prediction_style": "recursive hindcast from 2000 to 2025"
   },
-  "dnn_forecast_12m": {
-    "2026-04-01": 18.7297,
-    "2026-05-01": 18.6145,
-    "2026-06-01": 18.6005,
-    "2026-07-01": 18.6927,
-    "2026-08-01": 18.7806,
-    "2026-09-01": 18.7318,
-    "2026-10-01": 18.6025,
-    "2026-11-01": 18.5126,
-    "2026-12-01": 18.512,
-    "2027-01-01": 18.5903,
-    "2027-02-01": 18.687,
-    "2027-03-01": 18.6817
+  "metrics": {
+    "mse": 0.403698,
+    "rmse": 0.635372,
+    "mae": 0.487404,
+    "r2": -0.713247
   }
 }
